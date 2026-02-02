@@ -41,22 +41,20 @@ Função: Gere a execução sequencial de todos os módulos, garantindo dependê
 📂 Estrutura de Pastas
 
 .
-├── pipeline.py             # Script principal (RODE ESTE)
-├── baixar_ans.py           # Módulo de Download
-├── processar_ans.py        # Módulo de Processamento
-├── validar_enriquecer.py   # Módulo de Enriquecimento
-├── agregar.py              # Módulo de Agregação
-├── requirements.txt        # Dependências do projeto
-│
-├── venv/                   # Ambiente Virtual (criado localmente)
-├── __pycache__/            # Cache de compilação Python (gerado automaticamente)
-│
-└── data/                   # Gerado automaticamente pelo pipeline
-    ├── raw/                # Ficheiros .zip originais e cadastro bruto
-    ├── intermediate/       # Ficheiros extraídos temporários
-    └── output/             # CSVs finais tratados
-
-
+ ├── pipeline.py             # Script principal (RODE ESTE)
+ ├── baixar_ans.py           # Módulo de Download
+ ├── processar_ans.py        # Módulo de Processamento
+ ├── validar_enriquecer.py   # Módulo de Enriquecimento
+ ├── agregar.py              # Módulo de Agregação
+ ├── requirements.txt        # Dependências do projeto
+ │
+ ├── venv/                   # Ambiente Virtual (criado localmente)
+ ├── __pycache__/            # Cache de compilação Python (gerado automaticamente)
+ │
+ └── data/                   # Gerado automaticamente pelo pipeline
+ ├── raw/                # Ficheiros .zip originais e cadastro bruto
+ ├── intermediate/       # Ficheiros extraídos temporários
+ └── output/             # CSVs finais tratados
 
 # 🚀 Como Executar
 Pré-requisitos
