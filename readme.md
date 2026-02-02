@@ -57,6 +57,7 @@ Função: Gere a execução sequencial de todos os módulos, garantindo dependê
     └── output/             # CSVs finais tratados
 
 
+
 🚀 Como Executar
 Pré-requisitos
 Python 3.8 ou superior.
