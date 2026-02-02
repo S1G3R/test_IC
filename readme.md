@@ -58,30 +58,34 @@ Função: Gere a execução sequencial de todos os módulos, garantindo dependê
 
 
 
-🚀 Como Executar
+# 🚀 Como Executar
 Pré-requisitos
 Python 3.8 ou superior.
 
-1. Configurar o Ambiente Virtual (venv)
+# 1. Configurar o Ambiente Virtual (venv)
 É altamente recomendado isolar as dependências do projeto.
 
-No Windows:
+# No Windows:
 
-# Criar o ambiente
+Criar o ambiente
+
 python -m venv venv
 
-# Ativar o ambiente
+Ativar o ambiente
+
 venv\Scripts\activate
 
-No Linux/Mac:
+# No Linux/Mac:
 
-# Criar o ambiente
+Criar o ambiente
+
 python3 -m venv venv
 
-# Ativar o ambiente
+Ativar o ambiente
+
 source venv/bin/activate
 
-2. Instalação das Dependências
+# 2. Instalação das Dependências
 Com o ambiente ativado, instale as bibliotecas necessárias:
 
 pip install -r requirements.txt
@@ -94,14 +98,14 @@ beautifulsoup4
 urllib3
 openpyxl
 
-3. Rodando o Pipeline
+# 3. Rodando o Pipeline
 Para executar o fluxo completo (End-to-End), basta rodar o orquestrador:
 
 python pipeline.py
 
 O terminal exibirá o progresso de cada etapa. Ao final, os resultados estarão na pasta data/output.
 
-📊 Resultados Gerados
+# 📊 Resultados Gerados
 Na pasta data/output, encontrará três ficheiros principais:
 
 consolidado_despesas.csv: Dados brutos unificados de todos os trimestres.
@@ -112,7 +116,7 @@ despesas_agregadas.csv: Relatório final analítico.
 
 Exemplo de colunas: RazaoSocial, UF, Total_Despesas, Media_Trimestral.
 
-🛠️ Decisões Técnicas e Desafios Superados
+# 🛠️ Decisões Técnicas e Desafios Superados
 Bloqueio de Robôs da ANS: O site da ANS possui proteções contra scraping e certificados SSL antigos.
 
 Solução: Implementamos headers de User-Agent simulando um navegador Chrome e desabilitamos a verificação SSL (verify=False) de forma controlada via urllib3.
